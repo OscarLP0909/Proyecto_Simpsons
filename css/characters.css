@@ -10,8 +10,9 @@ body {
 
 #characters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 2fr));
     gap: 2rem;
+    margin-top: 50px;
 }
 
 .character-card {
@@ -23,22 +24,21 @@ body {
     overflow: hidden;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: 
-        transform 0.25s ease;
-        box-shadow: 0.25s ease;
+    transition: transform 0.25s ease; box-shadow: 0.25s ease;
 }
 
 .character-card:hover {
+    cursor: pointer;
     transform: scale(1.03);     
     box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
 }
 
-.character-img {
-    width: 100%;
-    height: 180px;
+.character-img  {
+    width: 100% !important;
+    height: 300px !important;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 0.75px;
+    margin-bottom: 0.75rem;
 }
 
 .character-name {
@@ -46,14 +46,15 @@ body {
     margin-bottom: 0.25rem;
 }
 
-.character-ocuppation {
+.character-occupation {
     font-weight: 500;           
     margin-bottom: 0.5rem;
 }
 
-#div-status-age {
+.div-status-age {
     display: flex;              
-    gap: 0.5rem;                
+    gap: 10rem;
+    margin-top: 0.625rem;
     margin-bottom: 0.5rem;
 }
 
